@@ -1,6 +1,7 @@
 import React from "react";
 import BrokenSample from "./components/BrokenSample";
 import IntentionallyBroken from "./components/IntentionallyBroken"; // Intentionally broken import
+import BrokenAgain from "./components/BrokenAgain"; // Intentionally broken component
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <BrokenSample />
       {/* Importing intentionally broken component for build failure */}
       <IntentionallyBroken />
+      {/* New intentionally broken component */}
+      <BrokenAgain />
     </div>
   );
 }

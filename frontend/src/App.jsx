@@ -2,6 +2,7 @@ import React from "react";
 import BrokenSample from "./components/BrokenSample";
 import IntentionallyBroken from "./components/IntentionallyBroken"; // Intentionally broken import
 import BrokenAgain from "./components/BrokenAgain"; // Intentionally broken component
+import MissingUseStateImport from "./components/MissingUseStateImport"; // Intentionally broken - useState not imported
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <IntentionallyBroken />
       {/* New intentionally broken component */}
       <BrokenAgain />
+      {/* Intentionally broken useState missing import */}
+      <MissingUseStateImport />
     </div>
   );
 }
